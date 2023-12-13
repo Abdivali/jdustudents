@@ -1,0 +1,4 @@
+const URL =
+  "https://script.googleusercontent.com/macros/echo?user_content_key=1MZUApkppx24wsxQlLjsDaP2JoTwXf6xD3cF-hi_t9S2hyg3ot6KU4VrPix4vme-FPpsM3sBq76S9Wvb-dODz1BE1Keom08gm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGhvWYRwf-qeOtu4YFL-OSUUlTr6A7Bwi4bM0WNUNh3p2g9bjsKH9Z8627H4EoObHaV_0_ymVCgY3U7bha82wBzhPDD081Y-2Nz9Jw9Md8uu&lib=MhfyQ6MUkvG95141XcmZwyYXzyRDTAPDD";
+
+export default URL;
