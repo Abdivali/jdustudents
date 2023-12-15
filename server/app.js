@@ -12,9 +12,9 @@ const cookieParsier = require("cookie-parser");
 const session = require("express-session");
 const MongoDBSession = require("connect-mongodb-session")(session);
 
-const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
+// const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
 
-// const MongoURI = "mongodb+srv://jdustudent:MXFKFDhGq6sJTucw@jdustudent.fbqk84s.mongodb.net/?retryWrites=true&w=majority";
+const MongoURI = "mongodb+srv://jdustudent:MXFKFDhGq6sJTucw@jdustudent.fbqk84s.mongodb.net/?retryWrites=true&w=majority";
 mongoose
     .connect(MongoURI, {
         useNewUrlParser: true,
