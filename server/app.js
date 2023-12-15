@@ -154,11 +154,10 @@ axios.get(URL.URLSTRUCT)
     console.error('Error fetching JSON data:', error);
   });
 
-app.get('/getStudents', (req, res) => {
+app.get('/', (req, res) => {
    UsersSChema.find()
    .then(students => res.json(students)).catch(err=>req.json(err))
   });
-
 
 app.listen(3001, () => {
     console.log("Server is running");

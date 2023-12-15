@@ -21,7 +21,7 @@ export default function Students() {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:3001/getStudents")
+        axios.get("http://localhost:3001/")
         .then(student=> {
             const attendences = student.data;
             // console.log(attendences)
