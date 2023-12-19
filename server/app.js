@@ -12,9 +12,9 @@ const cookieParsier = require("cookie-parser");
 const session = require("express-session");
 const MongoDBSession = require("connect-mongodb-session")(session);
 
-const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
+// const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
 
-// const MongoURI = "mongodb+srv://abdivalisharafov:U6Iuwf2HP0eaH8RJ@cluster1.wsgpxpj.mongodb.net/?retryWrites=true&w=majority";
+const MongoURI = "mongodb+srv://abdivalisharafov:U6Iuwf2HP0eaH8RJ@cluster1.wsgpxpj.mongodb.net/?retryWrites=true&w=majority";
 mongoose
     .connect(MongoURI, {
         useNewUrlParser: true,
@@ -51,114 +51,114 @@ app.use(
     })
 );
 
-axios.get(URL.URLIT)
-  .then(response => {
-    // console.log(response)
-    const jsonData = response.data;
-    try {
-         UsersSChema.create(jsonData.data)
-        console.log('data successfully imported')
-        // to exit the process
+// axios.get(URL.URLIT)
+//   .then(response => {
+//     // console.log(response)
+//     const jsonData = response.data;
+//     try {
+//          UsersSChema.create(jsonData.data)
+//         console.log('data successfully imported')
+//         // to exit the process
         
-      } catch (error) {
-        console.log('error', error)
-      }
-    // console.log(jsonData.data[1]);cl
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
-axios.get(URL.URLDATA)
-  .then(response => {
-    // console.log(response)
-    const jsonData = response.data;
-    try {
-         UsersSChema.create(jsonData.data)
-        console.log('data successfully imported')
-        // to exit the process
+//       } catch (error) {
+//         console.log('error', error)
+//       }
+//     // console.log(jsonData.data[1]);cl
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON data:', error);
+//   });
+// axios.get(URL.URLDATA)
+//   .then(response => {
+//     // console.log(response)
+//     const jsonData = response.data;
+//     try {
+//          UsersSChema.create(jsonData.data)
+//         console.log('data successfully imported')
+//         // to exit the process
         
-      } catch (error) {
-        console.log('error', error)
-      }
-    // console.log(jsonData.data[1]);cl
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
-axios.get(URL.URLPHISICS)
-  .then(response => {
-    // console.log(response)
-    const jsonData = response.data;
-    try {
-         UsersSChema.create(jsonData.data)
-        console.log('data successfully imported')
-        // to exit the process
+//       } catch (error) {
+//         console.log('error', error)
+//       }
+//     // console.log(jsonData.data[1]);cl
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON data:', error);
+//   });
+// axios.get(URL.URLPHISICS)
+//   .then(response => {
+//     // console.log(response)
+//     const jsonData = response.data;
+//     try {
+//          UsersSChema.create(jsonData.data)
+//         console.log('data successfully imported')
+//         // to exit the process
         
-      } catch (error) {
-        console.log('error', error)
-      }
-    // console.log(jsonData.data[1]);cl
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
-axios.get(URL.URLJAPAN)
-  .then(response => {
-    // console.log(response)
-    const jsonData = response.data;
-    try {
-         UsersSChema.create(jsonData.data)
-        console.log('data successfully imported')
-        // to exit the process
+//       } catch (error) {
+//         console.log('error', error)
+//       }
+//     // console.log(jsonData.data[1]);cl
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON data:', error);
+//   });
+// axios.get(URL.URLJAPAN)
+//   .then(response => {
+//     // console.log(response)
+//     const jsonData = response.data;
+//     try {
+//          UsersSChema.create(jsonData.data)
+//         console.log('data successfully imported')
+//         // to exit the process
         
-      } catch (error) {
-        console.log('error', error)
-      }
-    // console.log(jsonData.data[1]);cl
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
-axios.get(URL.URLMATH)
-  .then(response => {
-    // console.log(response)
-    const jsonData = response.data;
-    try {
-         UsersSChema.create(jsonData.data)
-        console.log('data successfully imported')
-        // to exit the process
+//       } catch (error) {
+//         console.log('error', error)
+//       }
+//     // console.log(jsonData.data[1]);cl
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON data:', error);
+//   });
+// axios.get(URL.URLMATH)
+//   .then(response => {
+//     // console.log(response)
+//     const jsonData = response.data;
+//     try {
+//          UsersSChema.create(jsonData.data)
+//         console.log('data successfully imported')
+//         // to exit the process
         
-      } catch (error) {
-        console.log('error', error)
-      }
-    // console.log(jsonData.data[1]);cl
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
-axios.get(URL.URLSTRUCT)
-  .then(response => {
-    // console.log(response)
-    const jsonData = response.data;
-    try {
-         UsersSChema.create(jsonData.data)
-        console.log('data successfully imported')
-        // to exit the process
+//       } catch (error) {
+//         console.log('error', error)
+//       }
+//     // console.log(jsonData.data[1]);cl
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON data:', error);
+//   });
+// axios.get(URL.URLSTRUCT)
+//   .then(response => {
+//     // console.log(response)
+//     const jsonData = response.data;
+//     try {
+//          UsersSChema.create(jsonData.data)
+//         console.log('data successfully imported')
+//         // to exit the process
         
-      } catch (error) {
-        console.log('error', error)
-      }
-    // console.log(jsonData.data[1]);cl
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data:', error);
-  });
+//       } catch (error) {
+//         console.log('error', error)
+//       }
+//     // console.log(jsonData.data[1]);cl
+//   })
+//   .catch(error => {
+//     console.error('Error fetching JSON data:', error);
+//   });
 
 app.get('/', (req, res) => {
    UsersSChema.find()
    .then(students => res.json(students)).catch(err=>req.json(err))
   });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("Server is running");
 });

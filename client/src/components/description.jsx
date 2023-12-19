@@ -22,7 +22,7 @@ function description() {
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
-    axios.get("http://localhost:3001/")
+    axios.get("https://jdustudents.vercel.app/")
         .then(student=> {
           let vars = student.data.filter(user => user.id == location.state.id);
               setStudents(prev => Array.from(Object.values(vars)));

@@ -21,7 +21,7 @@ export default function Students() {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:3001/")
+        axios.get("https://jdustudents.vercel.app/")
         .then(student=> {
             const attendences = student.data;
             // console.log(attendences)
