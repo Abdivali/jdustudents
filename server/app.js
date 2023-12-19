@@ -32,7 +32,7 @@ const store = new MongoDBSession({
 });
 
 // Middlewares
-app.use(cors());
+// app.use(cors());
 
 // Time management
 app.locals.moment = require("moment");
