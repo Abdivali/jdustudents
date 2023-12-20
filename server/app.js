@@ -12,7 +12,7 @@ const methodOverride = require("method-override");
 const cookieParsier = require("cookie-parser");
 const session = require("express-session");
 const MongoDBSession = require("connect-mongodb-session")(session);
-const redis = require('./redis')
+// const redis = require('./redis')
 
 // const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
 const MongoURI= process.env.MONGODB_CONNECT_URI
@@ -157,11 +157,16 @@ app.use(
 //   });
 
 app.get('/', (req, res) => {
-  res.send("fsdfsdfsdf")
    UsersSChema.find()
-   .then(students => res.json(students)).catch(err=>req.json(err))
+   .then(students => {
+    res.json(students)
+    res.send(students)
+   }).catch(err=>console.log(err))
+   
   });
 
-app.listen(process.env.PORT || 3001, () => {
+
+
+app.listen( 3001, () => {
     console.log("Server is running");
 });
