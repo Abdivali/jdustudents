@@ -155,6 +155,7 @@ app.use(
 //   });
 
 app.get('/', (req, res) => {
+  res.send("fsdfsdfsdf")
    UsersSChema.find()
    .then(students => res.json(students)).catch(err=>req.json(err))
   });
