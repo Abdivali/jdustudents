@@ -12,6 +12,7 @@ const methodOverride = require("method-override");
 const cookieParsier = require("cookie-parser");
 const session = require("express-session");
 const MongoDBSession = require("connect-mongodb-session")(session);
+const redis = require('./redis')
 
 // const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
 
