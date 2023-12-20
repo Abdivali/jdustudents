@@ -15,10 +15,10 @@ const MongoDBSession = require("connect-mongodb-session")(session);
 const redis = require('./redis')
 
 // const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
-
+const MongoURI= process.env.MONGODB_CONNECT_URI
 // const MongoURI = "mongodb+srv://abdivalisharafov:JdIiT75EhCmRzZEd@myapp.1rvalii.mongodb.net/myapp?retryWrites=true&w=majority";
 mongoose
-    .connect(process.env.MONGODB_CONNECT_URI, {
+    .connect(MongoURI, {
         useNewUrlParser: true,
         useCreateIndex: true,
         useFindAndModify: false,
