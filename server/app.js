@@ -2,6 +2,7 @@ const UsersSChema=require ("./model/users")
 const URL=require("./link")
 const express = require("express");
 const app = express();
+require("dotenv").config();
 const axios= require("axios")
 const path = require("path");
 const cors = require("cors");
@@ -14,9 +15,9 @@ const MongoDBSession = require("connect-mongodb-session")(session);
 
 // const MongoURI = "mongodb://127.0.0.1:27017/jduloyiha";
 
-const MongoURI = "mongodb+srv://abdivalisharafov:JdIiT75EhCmRzZEd@myapp.1rvalii.mongodb.net/myapp?retryWrites=true&w=majority";
+// const MongoURI = "mongodb+srv://abdivalisharafov:JdIiT75EhCmRzZEd@myapp.1rvalii.mongodb.net/myapp?retryWrites=true&w=majority";
 mongoose
-    .connect(MongoURI, {
+    .connect(process.env.MONGODB_CONNECT_URI, {
         useNewUrlParser: true,
         useCreateIndex: true,
         useFindAndModify: false,
