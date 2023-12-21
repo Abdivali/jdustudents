@@ -21,7 +21,7 @@ export default function Students() {
     }
 
     useEffect(() => {
-         axios.get("http://localhost:3001/")
+         axios.get("https://jdustudent-render.onrender.com/")
         // axios.get("mongodb+srv://abdivalisharafov:JdIiT75EhCmRzZEd@myapp.1rvalii.mongodb.net/myapp?retryWrites=true&w=majority/")       
         .then(student=> {
             console.log(student)

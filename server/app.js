@@ -37,7 +37,7 @@ const store = new MongoDBSession({
 app.use(cors());
 
 // Time management
-app.locals.moment = require("moment");
+// app.locals.moment = require("moment");
 
 // JSON format
 app.use(express.json());
