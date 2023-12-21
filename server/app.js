@@ -164,6 +164,14 @@ app.get('/', (req, res) => {
     }
     ).catch(err=>req.json(err))
   });
+  app.get('/description', (req, res) => {
+    UsersSChema.find()
+    .then(students => {
+     // res.json(students)
+     res.send(students)
+     }
+     ).catch(err=>req.json(err))
+   });
 
 app.listen(process.env.PORT || 3001, () => {
     console.log("Server is running");
