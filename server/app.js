@@ -160,13 +160,10 @@ app.get('/', (req, res) => {
    UsersSChema.find()
    .then(students => {
     res.json(students)
-    res.send(students)
-   }).catch(err=>console.log(err))
-   
+    res.send(students)}
+    ).catch(err=>req.json)
   });
 
-
-
-app.listen( 3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("Server is running");
 });
